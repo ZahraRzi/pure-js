@@ -1,0 +1,30 @@
+body {
+    background: #4fa883;
+}
+
+.form {
+    position: relative;
+    margin: auto;
+    width: 450px;
+    top: 150px;
+}
+
+#numbers {
+    color: #2a2e5c;
+    border: 2px outset #2a2e5c;
+    border-radius: 5px;
+    height: 330px;
+    width: 500px;
+    font-size: 280px;
+    display: block;
+}
+
+.btn {
+    background-color: #2a2e5c;
+    height: 50px;
+    width: 150px;   
+    border-radius: 10px;
+    margin: 15px auto;
+
+
+}
