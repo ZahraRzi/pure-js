@@ -1,35 +1,34 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="incr-decr.css" />
-    <script
-      src="https://kit.fontawesome.com/36ca624708.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <ul id="list"></ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="incr-decr.css" />
+  <script src="https://kit.fontawesome.com/36ca624708.js" crossorigin="anonymous"></script>
+</head>
 
-    <ul id="list1"></ul>
+<body>
+  <ul id="list"></ul>
 
-    <div class="form">
-      <input type="text" value="0" id="numbers" />
-      <!-- Here we don't need input, p, div, span is better to use, or you should disable your input. If you fill this input with any text, the result after decrease or increase would be NaN -->
-      <div class="btns">
-        <button type="button" value="+1" id="incr" class="btn">
-          <i class="fa fa-plus" aria-hidden="true"></i>
-        </button>
-        <button type="button" value="-1" id="decr" class="btn">
-          <i class="fa fa-minus" aria-hidden="true"></i>
-        </button>
-      </div>
+  <ul id="list1"></ul>
+
+  <div class="form">
+    <span id="numbers">0</span>
+    <!-- Here we don't need input, p, div, span is better to use, or you should disable your input. If you fill this input with any text, the result after decrease or increase would be NaN -->
+    <div class="btns">
+      <button type="button" value="+1" id="incr" class="btn">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+      </button>
+      <button type="button" value="-1" id="decr" class="btn">
+        <i class="fa fa-minus" aria-hidden="true"></i>
+      </button>
     </div>
+  </div>
 
-    <script src="incr-decr.js"></script>
-    <script src="listLoop.js"></script>
-    <script src="listReduce.js"></script>
-  </body>
+  <script src="incr-decr.js"></script>
+  <script src="listLoop.js"></script>
+  <script src="listReduce.js"></script>
+</body>
+
 </html>
