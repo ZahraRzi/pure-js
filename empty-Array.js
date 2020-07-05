@@ -1,18 +1,30 @@
-
-const input = document.getElementById("cars");
-const listItems = document.getElementById("list2");
-const btn = document.getElementById("btn");
-
 let toDoList = [];
-let z = input.value;
-toDoList.push(z);
-let i;
 
-btn.addEventListener("onclick", function (event) {
-  event.preventDefault();
-  for (let i = 0; i < toDoList.length; i++) {
-  z += `<li>${toDoList[i]}</li>`;
+function getId(id) {
+  return document.getElementById(id);
+}
+
+function generateList(array) {
+  var result = "";
+  for (let i = 0; i < array.length; i++) {
+    result += `<li>${array[i]}</li>`;
   }
-   })
+  return result;
+}
 
-listItems.innerHTML = z;
+// @todo
+// 1. check for duplicate item => array methods
+// 2. add remove button to generateList function => functions in js
+
+getId("todoListForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var input = getId("cars");
+  var listElement = getId("todoList");
+  if (input.value) {
+    toDoList.push(input.value);
+    listElement.innerHTML = generateList(toDoList);
+    input.value = "";
+  } else {
+    alert("no empty value");
+  }
+});

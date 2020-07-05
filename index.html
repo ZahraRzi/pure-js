@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/36ca624708.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <script src="https://kit.fontawesome.com/36ca624708.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <ul id="list"></ul>
 
-<body>
-  <ul id="list"></ul>
+    <ul id="list1"></ul>
 
-  <ul id="list1"></ul>
-
-  <div class="form">
-    <span id="numbers">0</span>
-    <div class="btns">
-      <button type="button" value="+1" id="incr" class="btn">
-        <i class="fa fa-plus" aria-hidden="true"></i>
-      </button>
-      <button type="button" value="-1" id="decr" class="btn">
-        <i class="fa fa-minus" aria-hidden="true"></i>
-      </button>
+    <div class="form">
+      <span id="numbers">0</span>
+      <div class="btns">
+        <button type="button" value="+1" id="incr" class="btn">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+        <button type="button" value="-1" id="decr" class="btn">
+          <i class="fa fa-minus" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
-  </div>
 
-  <br />
+    <br />
 
-  <ul id="list2"></ul>
+    <ul id="list2"></ul>
 
-  <form id="" outocomplete="on">
-    <label for="cars">Car Model:</label>
-    <input type="text" id="cars" name="cars" placeholder="BMW">
-    <button type="submit" id="btn" name="submit">Submit</button>
-  </form>
+    <form id="todoListForm" outocomplete="on">
+      <label for="cars">Car Model:</label>
+      <input type="text" id="cars" name="cars" placeholder="BMW" />
+      <button type="submit" id="btn" name="submit">Submit</button>
+    </form>
 
-  <script src="incr-decr.js"></script>
-  <script src="listLoop.js"></script>
-  <script src="listReduce.js"></script>
-  <script src="empty-Array.js"></script>
+    <ul id="todoList"></ul>
 
-</body>
-
+    <script src="incr-decr.js"></script>
+    <script src="listLoop.js"></script>
+    <script src="listReduce.js"></script>
+    <script src="empty-Array.js"></script>
+  </body>
 </html>
