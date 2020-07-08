@@ -7,14 +7,16 @@ function getId(id) {
 function generateList(array) {
   var result = "";
   for (let i = 0; i < array.length; i++) {
-    result += `<li>${array[i]}</li>`;
+    result += `<li>
+    <span>${array[i]}</span>
+    <button>edit</button>
+    <button>remove</button>
+    </li>`;
   }
   return result;
 }
 
-// @todo
-// 1. check for duplicate item => array methods
-// 2. add remove button to generateList function => functions in js
+
 
 getId("todoListForm").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -32,5 +34,7 @@ getId("todoListForm").addEventListener("submit", function (e) {
     toDoList.push(input);
   }
   document.getElementById("todoListForm").reset();
-  console.log(toDoList);
+
 });
+
+console.log(toDoList);
