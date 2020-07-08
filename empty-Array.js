@@ -20,11 +20,17 @@ getId("todoListForm").addEventListener("submit", function (e) {
   e.preventDefault();
   var input = getId("cars");
   var listElement = getId("todoList");
-  if (input.value) {
-    toDoList.push(input.value);
+  var input = input.value;
+  if (input && toDoList.indexOf(input) == -1) {
+    toDoList.push(input);
     listElement.innerHTML = generateList(toDoList);
-    input.value = "";
+  } else if (input && toDoList.indexOf(input) != -1) {
+    alert("No duplicate value!");
+  } else if (input = " ") {
+    alert("No empty value!");
   } else {
-    alert("no empty value");
+    toDoList.push(input);
   }
+  document.getElementById("todoListForm").reset();
+  console.log(toDoList);
 });
