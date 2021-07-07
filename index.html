@@ -1,38 +1,49 @@
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="incr-decr.css">
-    <script src="https://kit.fontawesome.com/36ca624708.js" crossorigin="anonymous"></script>
 
+    <script
+      src="https://kit.fontawesome.com/36ca624708.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-</head>
+  <body>
+    <ul id="list"></ul>
 
-<body>
-    <ul id="list">
-    </ul>
+    <ul id="list1"></ul>
 
-    <ul id="list1">
-    </ul>
-    
     <div class="form">
-        <input type="text" value="0" id="numbers">
-        <div class="btns">
-            <button type="button" value="+1" id="incr" class="btn">
-                <i class="fa fa-plus" aria-hidden="true"></i>
-            </button>
-            <button type="button" value="-1" id="decr" class="btn">
-                <i class="fa fa-minus" aria-hidden="true"></i>
-            </button>
-        </div>
+      <span id="numbers">0</span>
+      <div class="btns">
+        <button type="button" value="+1" id="incr" class="btn">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+        <button type="button" value="-1" id="decr" class="btn">
+          <i class="fa fa-minus" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
 
-    <script src="incr-decr.js"></script> 
+    <br />
+
+    <ul id="list2"></ul>
+
+    <form id="todoListForm" outocomplete="on">
+      <label for="cars">Car Model:</label>
+      <input type="text" id="cars" name="cars" placeholder="BMW" />
+      <button type="submit" id="btn" name="submit">Submit</button>
+    </form>
+
+    <ul id="todoList"></ul>
+
+    <script src="incr-decr.js"></script>
     <script src="listLoop.js"></script>
     <script src="listReduce.js"></script>
-
-</body>
-
+    <script src="empty-Array.js"></script>
+    <script src="function.js"></script>
+  </body>
 </html>
